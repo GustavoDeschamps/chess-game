@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Study-room palette: cream + walnut */
+  --color-cream-50: #fdfaf3;
+  --color-cream-100: #f7f1e3;
+  --color-cream-200: #ede4cf;
+  --color-walnut-700: #5b3a1f;
+  --color-walnut-800: #3f2814;
+  --color-walnut-900: #2a1a0d;
+  --color-accent-600: #8a6d3b;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream-50);
+  color: var(--color-walnut-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
